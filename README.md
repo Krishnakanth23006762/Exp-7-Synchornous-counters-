@@ -98,14 +98,6 @@ endmodule
 ## DOWN COUNTER:
 ![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/44da3457-55ac-41dd-b538-97717d3c5699)
 
-### TIMING DIGRAMS FOR COUNTER  
-
-## UP COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/48749290-4028-466e-a32e-551bd8976452)
-
-## DOWN COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/32019e58-0461-4d6b-be85-35a663c4a32d)
-
 
 ### TRUTH TABLE 
 
@@ -114,6 +106,15 @@ endmodule
 
 ## DOWN COUNTER:
 ![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/eff78b8a-3977-4400-8f96-6b34537c2e05)
+
+### TIMING DIGRAMS FOR COUNTER  
+
+## UP COUNTER:
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/48749290-4028-466e-a32e-551bd8976452)
+
+## DOWN COUNTER:
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/32019e58-0461-4d6b-be85-35a663c4a32d)
+
 
 ### RESULTS 
 Thus synchornous counters up counter and down counter circuit are studied and the truth table for different logic gates are verified.
