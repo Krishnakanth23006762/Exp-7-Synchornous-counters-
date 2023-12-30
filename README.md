@@ -69,29 +69,27 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 
 ## UP COUNTER:
 ```
-Module upcounter(clk,a);
+module uc(clk, A);
 input clk;
-output reg[3:0];
+output reg [2:0]A;
 always @(posedge clk)
 begin
-a[3]=(a[2]&a[1]&a[0])^a[3];
-a[2]=(a[1]&a[0])^a[2];
-a[1]=(a[0]^a[1]);
-a[0]= ^a[0];
+A[2]=(((A[0])&(A[1]))^A[2]);
+A[1]=(A[0])^A[1];
+A[0]=A[0]^1;
 end
 endmodule
 ```
 ## DOWN COUNTER:
 ```
-Module downcounter(clk,a);
+module dc(clk,A);
 input clk;
-output reg[3:0]a;
+output reg [2:0]A;
 always @(posedge clk)
 begin
-a[3]=(~a[2]&~a[1]&~a[0])^a[3];
-a[2]=(~a[1]&~a[0])^a[2];
-a[1]=(~a[0]^a[1]);
-a[0]=1^a[0];
+A[2]=(((~A[0])&(~A[1]))^A[2]);
+A[1]=(~A[0])^A[1];
+A[0]=1^A[0];
 end
 endmodule
 ```
@@ -108,18 +106,22 @@ endmodule
 ### TRUTH TABLE 
 
 ## UP COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/49827b3e-20e8-4e10-86d4-940d111fbb98)
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/d841c3a7-637b-4e14-a512-c5183153aa8d)
+
 
 ## DOWN COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/eff78b8a-3977-4400-8f96-6b34537c2e05)
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/7f025ccb-8851-4dc4-994b-c04e20f309bc)
+
 
 ### TIMING DIGRAMS FOR COUNTER  
 
 ## UP COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/48749290-4028-466e-a32e-551bd8976452)
+
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/d07902ab-29ca-4c7e-9402-19c0834242eb)
 
 ## DOWN COUNTER:
-![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/32019e58-0461-4d6b-be85-35a663c4a32d)
+
+![image](https://github.com/Krishnakanth23006762/Exp-7-Synchornous-counters-/assets/138849446/520fc6a3-e386-4c04-956a-7a5b4470e9c9)
 
 
 ### RESULTS 
